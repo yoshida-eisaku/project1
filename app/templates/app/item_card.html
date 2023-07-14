@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="col-3">
+        <p>名前</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.name }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>電話番号</p>
+    </div>
+    <div class="col-9">
+        <p>{{item.phone}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>商品名</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.product}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>JANコード</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.jan}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>登録日</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.created_at|date:"Y/m/d G:i:s" }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>担当者名</p>
+    </div>
+    <div class="col-9">
+        <p>{{item.staff}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>カードID</p>
+    </div>
+    <div class="col-9">
+        <p>{{item.setcardID}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>商品名</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.product}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>備考</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.memo|linebreaksbr }}</p>
+    </div>
+</div>
+

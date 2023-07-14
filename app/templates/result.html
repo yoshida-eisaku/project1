@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>結果</title>
+</head>
+<body>
+    <h2>読み込まれたデータ:</h2>
+    <table>
+        {% for index, row in data.iterrows %}
+        <tr>
+            {% for value in row %}
+            <td>{{ value }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>保存されたファイル:</h2>
+    <p>{{ file_path }}</p>
+
+    <form method="get" action="{% url 'upload' %}">
+        <button type="submit">戻る</button>
+    </form>
+</body>
+</html>

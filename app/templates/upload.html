@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excelファイルのアップロード</title>
+</head>
+<body>
+    <h2>Excelファイルをアップロードしてください:</h2>
+     <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }} 
+        <button type="submit">送信</button>
+     </form>
+     
+    <form method="get" action="{% url 'index' %}">
+        <button type="submit">戻る</button>
+    </form>
+    <form method="post" action="{% url 'run_tests' %}">
+        {% csrf_token %}
+        <button type="submit">テストを実行</button>
+    </form>
+</body>
+</html>
